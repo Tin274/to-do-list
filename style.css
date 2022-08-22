@@ -1,0 +1,113 @@
+body { 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #d70026;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+h1 {
+  color: #F8F5F2;
+}
+
+
+div {
+  width: 100%;
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  height: 30px;
+  padding: 0 0 0 10px;
+  border: none;
+}
+
+input::placeholder {
+  color: #002c54;
+  font-size: 1.1em;
+}
+
+input:focus {
+  outline: 0;
+}
+
+button {
+  background-color: #002c54;
+  color: #F8F5F2;
+  border: none;
+  width: 10%;
+  height: 30px;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #edb83d;
+  color: #002c54;
+  font-weight: bold;
+}
+
+/* Listenelemente  */
+
+ul {
+  list-style: none;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  color: #002c54;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+}
+
+ul li:hover {
+  background-color: #002c54;
+  color: #f9f9f9;
+}
+
+ul li:nth-child(odd) {
+  background-color: lightgray;
+}
+ul li:nth-child(odd):hover {
+  background-color: #002c54;
+}
+
+ul li.checked {
+  background-color: #edb83d;
+  color: #002c54;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '✔';
+  border-color: #f9f9f9;
+  position: absolute;
+  left: 20px;
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #d70026;
+  color: #F8F5F2;
+}
+
+
+
+
